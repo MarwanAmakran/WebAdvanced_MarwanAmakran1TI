@@ -1,0 +1,1 @@
+Een interactieve single-page webapplicatie gemaakt in het kader van het vak **Web Advanced** (1TI). Met deze app kunnen gebruikers anime ontdekken via de **Jikan API**, favorieten opslaan, zoeken en sorteren – allemaal in een moderne en responsieve interface.
