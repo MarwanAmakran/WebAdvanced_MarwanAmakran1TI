@@ -1,32 +1,28 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Anime Explorer</title>
-  <link rel="stylesheet" href="./src/style.css" />
-</head>
-<body>
-  <header>
-    <h1>Anime Explorer</h1>
-    <input type="text" id="search" placeholder="Zoek anime..." />
-    <select id="sort">
-      <option value="title">Titel</option>
-      <option value="score">Score</option>
-    </select>
-    <button id="themeToggle">Thema</button>
-  </header>
-  <main>
-    <section id="animeList"></section>
-    <section id="favorites">
-      <h2>Favorieten</h2>
-      <ul id="favoritesList"></ul>
-    </section>
-  </main>
-  <footer>
-    <p>&copy; 2025 Anime Explorer</p>
-  </footer>
-  <script type="module" src="./src/main.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Anime Explorer</title>
+    <link rel="stylesheet" href="./src/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Anime Explorer</h1>
+      <div class="controls">
+        <input type="text" id="searchInput" placeholder="Zoek anime..." />
+        <select id="sortSelect">
+          <option value="title">Titel A-Z</option>
+          <option value="score">Score Hoog → Laag</option>
+          <option value="year">Jaar Oud → Nieuw</option>
+        </select>
+        <button id="themeToggle">🌙</button>
+        <button id="showFavorites">⭐ Favorieten</button>
+      </div>
+    </header>
+    <main>
+      <div id="animeList" class="grid"></div>
+    </main>
+    <script type="module" src="./src/main.js"></script>
+  </body>
 </html>
