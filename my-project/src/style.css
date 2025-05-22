@@ -21,14 +21,18 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: linear-gradient(135deg, #ff4081, #ffd740);
-  color: #fff;
-  padding: 2rem 1rem;
-  border-bottom: 5px solid #ff2f70;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-  background-image: url('https://i.imgur.com/4M34hi2.png'); /* optionele anime-bg */
+  justify-content: center;
+  background-image: url('https://wallpapercave.com/wp/wp6316440.jpg');
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
+  background-color: rgba(0, 0, 0, 0.4);
+  background-blend-mode: darken;
+  color: white;
+  padding: 2.5rem 1rem;
+  min-height: 250px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.25);
+  border-bottom: 5px solid #ff2f70;
 }
 
 .flag-img {
