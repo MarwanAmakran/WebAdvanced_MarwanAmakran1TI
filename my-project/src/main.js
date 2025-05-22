@@ -90,7 +90,9 @@ sortSelect.addEventListener('change', renderList);
 
 themeToggle.addEventListener('click', () => {
   document.body.classList.toggle('dark');
-  localStorage.setItem('theme', document.body.classList.contains('dark') ? 'dark' : 'light');
+  const isDark = document.body.classList.contains('dark');
+  localStorage.setItem('theme', isDark ? 'dark' : 'light');
+  themeToggle.textContent = isDark ? '☀️' : '🌙';
 });
 
 showFavorites.addEventListener('click', () => {
@@ -99,9 +101,8 @@ showFavorites.addEventListener('click', () => {
   renderList();
 });
 
-window.addEventListener('load', () => {
-  if (localStorage.getItem('theme') === 'dark') {
-    document.body.classList.add('dark');
-  }
+if (localStorage.getItem('theme') === 'dark') {
+  themeToggle.textContent = '☀️';
+  document.body.classList.add('dark');
+}
   fetchTopAnime();
-});
