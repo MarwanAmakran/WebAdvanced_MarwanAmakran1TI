@@ -21,17 +21,34 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 1rem;
-  gap: 0.5rem;
+  background: linear-gradient(135deg, #ff4081, #ffd740);
+  color: #fff;
+  padding: 2rem 1rem;
+  border-bottom: 5px solid #ff2f70;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  background-image: url('https://i.imgur.com/4M34hi2.png'); /* optionele anime-bg */
+  background-size: cover;
+  background-position: center;
 }
+header h1 {
+  font-family: 'Impact', sans-serif;
+  font-size: 2.5rem;
+  text-shadow: 2px 2px 4px #000;
+  color: #fff;
+  margin: 0 0 1rem 0;
+}
+
 
 .controls {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.5rem;
+  gap: 0.7rem;
   justify-content: center;
+  background-color: rgba(255, 255, 255, 0.25);
+  padding: 1rem;
+  border-radius: 12px;
+  backdrop-filter: blur(5px);
 }
-
 input, select, button {
   padding: 0.5rem;
   border-radius: 5px;
